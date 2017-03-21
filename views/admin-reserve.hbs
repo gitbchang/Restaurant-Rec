@@ -1,0 +1,109 @@
+<div class="row">
+	<div class="col-md-12">
+		<h1>Admin Reservation Page</h1>
+		<div class="jumbotron">
+
+			<div id="reservation-template" class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Reservation Availability</h3>
+				</div>
+				<div id="reservation-list">
+
+				</div>
+				<div>
+					<!-- Small modal -->
+					<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>-->
+
+					<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+						<div class="modal-dialog modal-sm" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="exampleModalLabel"></h4>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label for="customer-name" class="control-label">Name:</label>
+											<input type="text" class="form-control" id="customer-name">
+										</div>
+										<div class="form-group">
+											<label for="customer-number" class="control-label">Phone number:</label>
+											<input type="text" class="form-control" id="customer-number">
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-default" data-dismiss="modal" id="submit_resv">Submit </button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Create a New Reservation Date</h3>
+				</div>
+				<div class="panel-body">
+					<p>Select your reservation options below.</p>
+				</div>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<h4>Date</h4>
+						<input class="form-control" type="text" id="date" data-format="DD-MM-YYYY" data-template="D MMM YYYY" name="date">
+					</li>
+					<li class="list-group-item">
+						<h4>First Reservation Time</h4>
+						<input class="form-control" type="text" id="start" data-format="HH:mm" data-template="HH : mm" name="datetime">
+					</li>
+					<li class="list-group-item">
+						<h4>Time Interval (minutes)</h4>
+						<!--<input class="form-control" type="text" id="interval" data-format="mm" data-template="mm" name="datetime">-->
+						<select id="interval">
+  <option value="15">15</option>
+  <option value="30">30</option>
+  <option value="45">45</option>
+  <option value="60">60</option>
+</select>
+					</li>
+					<li class="list-group-item">
+						<h4>Last Reservation Time</h4>
+						<input class="form-control" type="text" id="end" data-format="HH:mm" data-template="HH : mm" name="datetime">
+					</li>
+					<li class="list-group-item text-center"> <button type="submit" id="create_new" class="btn btn-default">Submit</button></li>
+				</ul>
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Reservation Status</h3>
+				</div>
+				<div class="panel-body"id="resv-display">
+					<!--<table class="table table-hover">
+						<thead>
+							<tr>
+							<th>DATE</th>
+							<th>TIME</th>
+							<th>NAME</th>
+							<th>PHONE</th>
+							</tr>
+						</thead>
+						<tbody >
+						</tbody>
+					</table>-->
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src='/js/moment.min.js'></script>
+<script type="text/javascript" src='/js/combodate.js'></script>
+<script type="text/javascript" src='/js/reserve.js'></script>

@@ -1,0 +1,113 @@
+<script src="/js/admin-contact.js"></script>
+
+
+<div class="row">
+	<div class="col-md-12">
+		<h1>Contact</h1>
+		<div class="jumbotron">
+
+			<div id="entry-template" class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Contact Information</h3>
+				</div>
+				<div class="panel-body">
+					{{!--<h3>Address</h3>--}}
+					<p id="addArea"></p>
+					{{!--<h3>Phone</h3>--}}
+					<p id="phoneArea"></p>
+					{{!--<h3>Email</h3>--}}
+					<p id="emailArea"></p>
+					<p><button id="editContactButton" type="button" class="btn btn-default btn-sm">Edit Contact Info</button></p>
+					<hr>
+					<h3>Hours of Operation</h3>
+					<p id="hoursArea"></p>
+					<p>
+					<button id="editHoursButton" type="button" class="btn btn-default btn-sm">Edit Store Hours</button>					
+					</p>
+				</div>
+			</div>
+
+<div id="editHoursModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Edit Store Hours</h4>
+      </div>
+      <div  class="modal-body">
+        <textarea id="hourModalBody" class="form-control"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button id="saveHours" type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="editContactModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Edit Contact Info</h4>
+      </div>
+      <div  class="modal-body">
+        <textarea id="contactInfoModalBody-name" class="form-control"></textarea>
+		<textarea id="contactInfoModalBody-number" class="form-control"></textarea>
+		<textarea id="contactInfoModalBody-email" class="form-control"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button id="saveContactInfo" type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+			<!--<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Contact Information</h3>
+				</div>
+				<div class="panel-body">
+					<p>Add your contact information below.</p>
+				</div>
+
+
+				<ul class="list-group">
+					<li class="list-group-item">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input class="form-control" id="name" placeholder="Restaurant Name">
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="form-group">
+							<label for="address">Address</label>
+							<input class="form-control" id="address" placeholder="Restaurant Address">
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="form-group">
+							<label for="phone">Phone</label>
+							<input class="form-control" id="phone" placeholder="Restaurant Phone">
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="form-group">
+							<label for="hours">Hours</label>
+							<input class="form-control" id="hours" placeholder="Restaurant Hours">
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="form-group">
+							<label for="email">Email </label>
+							<input type="email" class="form-control" id="email" placeholder="Email">
+						</div>
+					</li>
+					<li class="list-group-item text-center"> <button type="submit" id="submit" class="btn btn-default">Submit</button></li>
+				</ul>
+			</div>-->
+		</div>
+	</div>
+</div>

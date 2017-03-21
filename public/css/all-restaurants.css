@@ -1,0 +1,19 @@
+#restaurantDisplayArea{
+    display: flex;
+ /*We have to give our flexbox a height before we can center the flex items*/
+  /*align-items: center;*/
+  /*height: 100vh;*/
+  height: 800px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+}
+
+.resButton {
+    /*flex: 1;*/
+    width: 24%;
+    margin: 5px;
+    
+}
+
