@@ -12,7 +12,7 @@ $(document).ready(function () {
     autoclose: true
   };
 
-  var lock = new Auth0Lock('w0afrsXkjEvuLPkJAmX7iI3GhWDVKTFB', 'bchang55.auth0.com', options, {
+  var lock = new Auth0Lock('ETYv1T0mcrgFOcJSdEGkDZH2K2Xaho6s', 'bchang55.auth0.com', options, {
     auth: {
       params: {
         scope: 'openid name email'
